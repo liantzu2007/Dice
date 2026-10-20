@@ -77,7 +77,11 @@ class MainActivity : ComponentActivity() {
                             onDoubleTap = {
                                 // 雙擊：重置為 0 (回到 dice0)
                                 diceNumber = 0
-                            }
+                            },
+                             onLongPress = {
+                                 diceNumber = 0
+                             }
+
                         )
                     }
 
