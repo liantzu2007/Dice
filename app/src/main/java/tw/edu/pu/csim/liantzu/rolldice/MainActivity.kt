@@ -63,9 +63,9 @@ class MainActivity : ComponentActivity() {
         ) {
             Text("請點擊圖片隨機丟骰子\n作者：練庭孜")
 
-            Spacer(modifier = Modifier.height(20.dp))
+            Spacer(modifier = Modifier.height(23.dp))
             Image(
-                painter = painterResource(id = diceImages[3]),
+                painter = painterResource(id = diceImages[diceNumber]),
                 contentDescription = "Dice",
                 modifier = Modifier
                     .pointerInput(Unit) {
